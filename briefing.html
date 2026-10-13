@@ -39,14 +39,14 @@
   }
   .sun {
     position: fixed; z-index: -3; left: 50%;
-    width: 38vmax; height: 38vmax; transform: translate(-50%, -50%);
+    width: 32vmax; height: 32vmax; transform: translate(-50%, -50%);
     background: radial-gradient(circle,
-      rgba(255,246,220,0.95) 0%, rgba(255,214,150,0.7) 24%,
-      rgba(255,170,100,0.32) 48%, rgba(255,150,90,0) 70%);
+      rgba(255,246,220,0.78) 0%, rgba(255,214,150,0.5) 24%,
+      rgba(255,170,100,0.22) 48%, rgba(255,150,90,0) 70%);
     animation: sunbreathe 30s ease-in-out infinite alternate;
     will-change: transform, opacity; transition: top 2s ease, opacity 2s ease;
   }
-  .sky.dawn ~ .sun { top: 70%; opacity: 0.95; }
+  .sky.dawn ~ .sun { top: 76%; opacity: 0.8; }
   .sky.day ~ .sun { top: 28%; opacity: 1; }
   .sky.dusk ~ .sun { top: 80%; opacity: 0.9; }
   .sky.night ~ .sun { top: 88%; opacity: 0.3; }
@@ -55,12 +55,12 @@
     position: fixed; z-index: -3; left: 50%; top: 15%;
     width: 62vmax; height: 30vmax; transform: translate(-50%, -50%);
     background: radial-gradient(ellipse,
-      rgba(255,220,170,0.30) 0%, rgba(255,200,150,0) 65%);
+      rgba(255,220,170,0.18) 0%, rgba(255,200,150,0) 65%);
     pointer-events: none;
     animation: glowshimmer 9s ease-in-out infinite;
   }
   @keyframes glowshimmer {
-    0%, 100% { opacity: 0.85; } 50% { opacity: 1; }
+    0%, 100% { opacity: 0.55; } 50% { opacity: 0.7; }
   }
   .stars {
     position: fixed; z-index: -3; inset: 0; transition: opacity 3s ease;
@@ -280,7 +280,7 @@
     overflow: hidden; }
 
   /* ---------------- horoscope banner ---------------- */
-  .horo-banner { text-align: center; z-index: 1; padding: 0.8vh 2rem 0; }
+  .horo-banner { text-align: center; z-index: 1; padding: 0.8vh 2rem 0.7vh; }
   .horo-banner .stars-line {
     font-size: 1.1rem; letter-spacing: 0.08em; color: #ffe3c2;
     text-shadow: 0 1px 12px rgba(40,16,8,0.45); line-height: 1.6;
@@ -294,7 +294,7 @@
   .quote .q-text { font-size: 1.25rem; font-style: italic; color: #fff0da; line-height: 1.5;
     text-shadow: 0 1px 14px rgba(40,16,8,0.45); max-width: 1050px; margin: 0 auto; }
   .quote .q-attr { font-size: 0.95rem; letter-spacing: 0.22em; text-transform: uppercase;
-    color: rgba(255,214,170,0.75); margin-top: 0.55rem; font-style: normal; }
+    color: rgba(255,228,190,0.96); margin-top: 0.55rem; font-style: normal; text-shadow: 0 1px 10px rgba(40,16,8,0.65); }
 </style>
 </head>
 <body>
