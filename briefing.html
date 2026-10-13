@@ -279,6 +279,14 @@
     text-shadow: 0 1px 12px rgba(40,16,8,0.45); line-height: 1.6;
     max-width: 1750px; margin: 0 auto;
   }
+  .horo-banner { width: min(1560px, 94%); margin: 0 auto; }
+  .horo-row { display: flex; align-items: baseline; gap: 1rem;
+    text-align: left; padding: 0.14rem 0; }
+  .horo-glyph { flex: 0 0 2.6rem; text-align: center; font-size: 1.3rem; }
+  .horo-name { flex: 0 0 9.2rem; font-size: 1.14rem; letter-spacing: 0.18em;
+    color: #ffd9a0; white-space: nowrap; }
+  .horo-text { font-size: 1.22rem; letter-spacing: 0.04em; color: #ffe3c2;
+    text-shadow: 0 1px 12px rgba(40,16,8,0.45); line-height: 1.5; }
 
   /* ---------------- stoic quote ---------------- */
   .quote { text-align: center; z-index: 1; padding: 1.2vh 3rem 2vh; }
@@ -342,7 +350,8 @@
     </div>
   </div>
   <div class="horo-banner r" style="--d:0.35s">
-    <div class="stars-line">♏ SCORPIO — The decision is only tough because you care. Feelings are loud; facts are louder. Choose, and mean it. ✦ ♉ TAURUS — Something good is circling, and it won&#x27;t look like what you expected. Say yes before you talk yourself out of it.</div>
+    <div class="horo-row"><span class="horo-glyph">♏</span><span class="horo-name">SCORPIO</span><span class="horo-text">The decision is only tough because you care. Feelings are loud; facts are louder. Choose, and mean it.</span></div>
+    <div class="horo-row"><span class="horo-glyph">♉</span><span class="horo-name">TAURUS</span><span class="horo-text">Something good is circling, and it won&#x27;t look like what you expected. Say yes before you talk yourself out of it.</span></div>
   </div>
 
   <div class="modules">
